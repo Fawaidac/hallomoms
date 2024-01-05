@@ -14,12 +14,14 @@ class AuthController extends Controller
 
     public function login(Request $request)
     {
-        $email = $request->input('email');
-        $password = $request->input('password');
+        $credentials = $request->only('email', 'password');
 
-        if ($email == 'hallomoms@gmail.com' && $password == 'isadmin') {
+        // Coba melakukan otentikasi
+        if (Auth::attempt($credentials)) {
+            // Jika otentikasi berhasil, arahkan ke dashboard
             return redirect()->route('dashboard');
         } else {
+            // Jika otentikasi gagal, kembalikan ke halaman login dengan pesan kesalahan
             return redirect()->back()->withInput()->withErrors('Email atau password tidak valid');
         }
     }

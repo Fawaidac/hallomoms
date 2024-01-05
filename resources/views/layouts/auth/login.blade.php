@@ -65,6 +65,7 @@
                                 <form role="form" class="text-start" action="{{ route('login.act') }}"
                                     method="POST">
                                     @csrf
+                                    @method('POST')
                                     @if ($errors->any())
                                         <div class="alert alert-primary alert-dismissible fade show text-white"
                                             role="alert">
