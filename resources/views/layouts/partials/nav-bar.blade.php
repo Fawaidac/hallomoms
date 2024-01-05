@@ -11,7 +11,7 @@
                 <a href="/about" class="nav-item nav-link {{ Route::is('about') ? 'active' : '' }} ">About</a>
                 <a href="/services" class="nav-item nav-link {{ Route::is('services') ? 'active' : '' }} ">Services</a>
                 <a href="/article" class="nav-item nav-link {{ Route::is('article') ? 'active' : '' }}">Article</a>
-                <a href="/contact" class="nav-item nav-link {{ Route::is('contact') ? 'active' : '' }}">Contact</a>
+                <a href="/contact" class="nav-item nav-link {{ Route::is('contact') ? 'active' : '' }}">Feedback</a>
                 <a href="/login" class="nav-item nav-link {{ Route::is('login') ? 'active' : '' }} ">Login</a>
             </div>
             {{-- <a href="" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Get A Quote<i

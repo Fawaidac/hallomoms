@@ -93,26 +93,14 @@
                     <div class="row">
                         <div class="col wow fadeInUp" data-wow-delay="0.5s">
                             <div class="owl-carousel testimonial-carousel">
-                                <div class="testimonial-item">
-                                    <img class="img-fluid rounded mb-3" src="assets/img/testimonial-1.jpg" alt="">
-                                    <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-                                        dolore
-                                        lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
-                                        erat.
-                                    </p>
-                                    <h4>Client Name</h4>
-                                    <span>Profession</span>
-                                </div>
-                                <div class="testimonial-item">
-                                    <img class="img-fluid rounded mb-3" src="assets/img/testimonial-2.jpg" alt="">
-                                    <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-                                        dolore
-                                        lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
-                                        erat.
-                                    </p>
-                                    <h4>Client Name</h4>
-                                    <span>Profession</span>
-                                </div>
+                                @foreach ($team as $item)
+                                    <div class="testimonial-item">
+                                        <img class="img-fluid rounded mb-3" src="assets/img/user.png" alt="">
+                                        <p class="fs-5"> {{ $item->about }}
+                                        </p>
+                                        <h4>{{ $item->name }}</h4>
+                                    </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>

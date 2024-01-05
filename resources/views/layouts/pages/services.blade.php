@@ -34,8 +34,8 @@
                                     alt="Icon">
                             </div>
                             <h4 class="mb-3">Breastfeeding</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                stet diam sed stet.</p>
+                            <p class="mb-4">We provide a warm online space, full of Breast Care guides and videos to help
+                                you get through each stage of breastfeeding comfortably.</p>
                             <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read
                                 More</a>
                         </div>
@@ -51,9 +51,11 @@
                                 <img class="img-fluid" src="assets/img/icon/pregnant.png" style="height: 64px"
                                     alt="Icon">
                             </div>
-                            <h4 class="mb-3">Pruning plants</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                stet diam sed stet.</p>
+                            <h4 class="mb-3">Pregnant</h4>
+                            <p class="mb-4">We provide a digital feast of guides, specialized exercise videos for
+                                trimesters 1, 2, and 3, and up-to-date information that supports every woman on her
+                                pregnancy journey. Find helpful resources, health tips and inspiration to navigate every
+                                precious moment of your pregnancy.</p>
                             <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read
                                 More</a>
                         </div>

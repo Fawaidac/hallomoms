@@ -16,7 +16,7 @@ class AuthController extends Controller
         $email = $request->input('email');
         $password = $request->input('password');
 
-        if ($email == 'hellomom@gmail.com' && $password == 'isadmin') {
+        if ($email == 'hallomoms@gmail.com' && $password == 'isadmin') {
             return redirect()->route('dashboard');
         } else {
             return redirect()->back()->withInput()->withErrors('Email atau password tidak valid');

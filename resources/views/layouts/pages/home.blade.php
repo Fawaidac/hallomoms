@@ -171,10 +171,12 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="fs-5 fw-bold text-primary">Why Choosing Us!</p>
                     <h1 class="display-5 mb-4">Few Reasons Why People Choosing Us!</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam
-                        et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat
-                        amet</p>
-                    <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
+                    <p class="mb-4">Welcome to Hallomoms, a dedicated online destination for amazing women who are
+                        pregnant and breastfeeding. Find exercise videos designed specifically for the 1st, 2nd and 3rd
+                        trimester, as well as breast care guides for breastfeeding moms. Join the community by reading
+                        informative articles related to pregnancy and breastfeeding. We support you every step of the way,
+                        providing useful information and resources to navigate pregnancy and breastfeeding with confidence.
+                        Let's achieve happiness and health for mom and baby together.</p>
                 </div>
                 <div class="col-lg-6">
                     <div class="row g-4 align-items-center">
@@ -238,8 +240,8 @@
                                     alt="Icon">
                             </div>
                             <h4 class="mb-3">Breastfeeding</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                stet diam sed stet.</p>
+                            <p class="mb-4">We provide a warm online space, full of Breast Care guides and videos to help
+                                you get through each stage of breastfeeding comfortably.</p>
                             <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read
                                 More</a>
                         </div>
@@ -255,9 +257,11 @@
                                 <img class="img-fluid" src="assets/img/icon/pregnant.png" style="height: 64px"
                                     alt="Icon">
                             </div>
-                            <h4 class="mb-3">Pruning plants</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                stet diam sed stet.</p>
+                            <h4 class="mb-3">Pregnant</h4>
+                            <p class="mb-4">We provide a digital feast of guides, specialized exercise videos for
+                                trimesters 1, 2, and 3, and up-to-date information that supports every woman on her
+                                pregnancy journey. Find helpful resources, health tips and inspiration to navigate every
+                                precious moment of your pregnancy.</p>
                             <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read
                                 More</a>
                         </div>
@@ -275,7 +279,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
-                        <h1 class="display-5 text-center mb-5">Get A Free Quote</h1>
+                        <h1 class="display-5 text-center mb-5">Feedback For Us</h1>
                         <div class="row g-3">
                             <div class="col-sm-6">
                                 <div class="form-floating">
@@ -289,20 +293,6 @@
                                     <input type="email" class="form-control bg-dark-opacity border-0" id="gmail"
                                         placeholder="Gurdian Email">
                                     <label for="gmail">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-dark-opacity border-0" id="cname"
-                                        placeholder="Child Name">
-                                    <label for="cname">Your Mobile</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-dark-opacity border-0" id="cage"
-                                        placeholder="Child Age">
-                                    <label for="cage">Service Type</label>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -324,68 +314,40 @@
     <!-- Quote End -->
 
 
-    <!-- Projects Start -->
+    <!-- Article Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="fs-5 fw-bold text-primary">Our Article</p>
-                <h1 class="display-5 mb-5">Some Of Our Wonderful Projects</h1>
+                <h1 class="display-5 mb-5">Some Of Our Article</h1>
             </div>
-            {{-- <div class="row wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-12 text-center">
-                    <ul class="list-inline rounded mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">All</li>
-                        <li class="mx-2" data-filter=".first">Complete Projects</li>
-                        <li class="mx-2" data-filter=".second">Ongoing Projects</li>
-                    </ul>
-                </div>
-            </div> --}}
             <div class="row g-4 portfolio-container">
-                <div class="col-lg-4 col-md-6 rounded portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded p-5">
-                        <div class="testimonial-item">
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-                                dolore
-                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
-                                erat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded p-5">
-                        <div class="testimonial-item">
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-                                dolore
-                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
-                                erat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="portfolio-inner rounded">
-                        <div class="portfolio-inner rounded p-5">
+                @foreach ($article as $item)
+                    <div class="col-lg-4 col-md-6 rounded portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-5">
                             <div class="testimonial-item">
-                                <h4>Client Name</h4>
-                                <span>Profession</span>
-                                <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-                                    dolore
-                                    lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
-                                    erat.
-                                </p>
+                                <div>
+                                    <h4>{{ $item->title }}</h4>
+                                    <span class="text-xxs">{{ $item->updated_at->format('d F Y H:i:s') }}</span>
+                                    <p class="fs-5"
+                                        style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; font-size: 1.25rem !important;">
+                                        {{ $item->description }}
+                                    </p>
+                                </div>
+                                <div class="mt-auto">
+                                    <a href="{{ route('article.show', $item->id) }}"
+                                        class="btn btn-primary mb-0 mt-0 fst-italic text-white">
+                                        Read More >>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
-    <!-- Projects End -->
+    <!-- Article End -->
 
 
     <!-- Team Start -->
@@ -393,35 +355,21 @@
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="fs-5 fw-bold text-primary">Our Team</p>
-                <h1 class="display-5 mb-5">Dedicated & Experienced Team Members</h1>
+                <h1 class="display-5 mb-5">Team Members</h1>
             </div>
             <div class="container-xxl py-5">
                 <div class="container">
                     <div class="row">
                         <div class="col wow fadeInUp" data-wow-delay="0.5s">
                             <div class="owl-carousel testimonial-carousel">
-                                <div class="testimonial-item">
-                                    <img class="img-fluid rounded mb-3" src="assets/img/testimonial-1.jpg"
-                                        alt="">
-                                    <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-                                        dolore
-                                        lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
-                                        erat.
-                                    </p>
-                                    <h4>Client Name</h4>
-                                    <span>Profession</span>
-                                </div>
-                                <div class="testimonial-item">
-                                    <img class="img-fluid rounded mb-3" src="assets/img/testimonial-2.jpg"
-                                        alt="">
-                                    <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-                                        dolore
-                                        lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
-                                        erat.
-                                    </p>
-                                    <h4>Client Name</h4>
-                                    <span>Profession</span>
-                                </div>
+                                @foreach ($team as $item)
+                                    <div class="testimonial-item">
+                                        <img class="img-fluid rounded mb-3" src="assets/img/user.png" alt="">
+                                        <p class="fs-5"> {{ $item->about }}
+                                        </p>
+                                        <h4>{{ $item->name }}</h4>
+                                    </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>

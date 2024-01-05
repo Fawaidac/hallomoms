@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\About;
 use App\Http\Requests\StoreAboutRequest;
 use App\Http\Requests\UpdateAboutRequest;
+use App\Models\Team;
 
 class AboutController extends Controller
 {
@@ -13,7 +14,9 @@ class AboutController extends Controller
      */
     public function index()
     {
-        return view('layouts.pages.about');
+        $team = Team::orderByDesc('id')->get();
+
+        return view('layouts.pages.about', compact('team'));
     }
 
     /**

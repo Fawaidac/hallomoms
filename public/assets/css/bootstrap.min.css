@@ -1826,6 +1826,7 @@ progress {
     border-radius: 4px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 @media (prefers-reduced-motion: reduce) {
     .form-control {
         transition: none;
@@ -6710,6 +6711,9 @@ fieldset:disabled .btn {
 .fs-5 {
     font-size: 1.25rem !important;
 }
+.fs-5-max {
+    font-size: 1.25rem !important;
+}
 .fs-6 {
     font-size: 1rem !important;
 }
@@ -6818,6 +6822,10 @@ fieldset:disabled .btn {
 }
 .text-black-50 {
     color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.text-black {
+    color: #000 !important;
 }
 .text-white-50 {
     color: rgba(255, 255, 255, 0.5) !important;

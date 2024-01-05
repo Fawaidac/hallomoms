@@ -19,137 +19,31 @@
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="fs-5 fw-bold text-primary">Our Article</p>
-                <h1 class="display-5 mb-5">Some Of Our Wonderful Projects</h1>
+                <h1 class="display-5 mb-5">Some Of Our Article</h1>
             </div>
-            {{-- <div class="row wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-12 text-center">
-                    <ul class="list-inline rounded mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">All</li>
-                        <li class="mx-2" data-filter=".first">Complete Projects</li>
-                        <li class="mx-2" data-filter=".second">Ongoing Projects</li>
-                    </ul>
-                </div>
-            </div> --}}
             <div class="row g-4 portfolio-container">
-                <div class="col-lg-4 col-md-6 rounded portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded p-5">
-                        <div class="testimonial-item">
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-                                dolore
-                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
-                                erat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 rounded portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded p-5">
-                        <div class="testimonial-item">
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-                                dolore
-                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
-                                erat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 rounded portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded p-5">
-                        <div class="testimonial-item">
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-                                dolore
-                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
-                                erat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 rounded portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded p-5">
-                        <div class="testimonial-item">
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-                                dolore
-                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
-                                erat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 rounded portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded p-5">
-                        <div class="testimonial-item">
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-                                dolore
-                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
-                                erat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 rounded portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded p-5">
-                        <div class="testimonial-item">
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-                                dolore
-                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
-                                erat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 rounded portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded p-5">
-                        <div class="testimonial-item">
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-                                dolore
-                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
-                                erat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded p-5">
-                        <div class="testimonial-item">
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-                                dolore
-                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
-                                erat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="portfolio-inner rounded">
-                        <div class="portfolio-inner rounded p-5">
+                @foreach ($article as $item)
+                    <div class="col-lg-4 col-md-6 rounded portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded p-5">
                             <div class="testimonial-item">
-                                <h4>Client Name</h4>
-                                <span>Profession</span>
-                                <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore
-                                    dolore
-                                    lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor
-                                    erat.
-                                </p>
+                                <div>
+                                    <h4>{{ $item->title }}</h4>
+                                    <span class="text-xxs">{{ $item->updated_at->format('d F Y H:i:s') }}</span>
+                                    <p class="fs-5"
+                                        style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; font-size: 1.25rem !important;">
+                                        {{ $item->description }}
+                                    </p>
+                                </div>
+                                <div class="mt-auto">
+                                    <a href="{{ route('article.show', $item->id) }}"
+                                        class="btn btn-primary mb-0 mt-0 fst-italic text-white">
+                                        Read More >>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
