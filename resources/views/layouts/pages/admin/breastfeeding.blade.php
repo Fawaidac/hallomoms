@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('title')
-    Team
+    Breastfeeding
 @endsection
 @push('script')
     <script defer>
@@ -62,11 +62,11 @@
                 <div class="card my-4">
                     <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                         <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                            <h6 class="text-white text-capitalize ps-3">Teams</h6>
+                            <h6 class="text-white text-capitalize ps-3">Breastfeeding</h6>
                         </div>
                         <button type="button" class="btn bg-gradient-dark mb-0 mt-3 float-end" data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop"><i class="material-icons text-sm">add</i>
-                            &nbsp;&nbsp;Add Team
+                            &nbsp;&nbsp;Add Data
                         </button>
                     </div>
                     <div class="card-body px-0 pb-2">
@@ -77,9 +77,11 @@
                                         <th class="text-uppercase text-center text-black font-weight-bolder">
                                             No</th>
                                         <th class="text-center  text-uppercase text-black font-weight-bolder">
-                                            Name</th>
+                                            Title</th>
                                         <th class="text-center text-uppercase text-black font-weight-bolder">
-                                            About</th>
+                                            Description</th>
+                                        <th class="text-center text-uppercase text-black font-weight-bolder">
+                                            Link Youtube</th>
                                         <th class="text-center text-uppercase text-black font-weight-bolder">
                                             Action</th>
                                     </tr>
@@ -91,17 +93,19 @@
                                                 {{ $loop->iteration }}
                                             </td>
                                             <td class="font-weight-bolder text-center">
-                                                <p class=" font-weight-bold mb-0">{{ $item->name }}</p>
+                                                <p class=" font-weight-bold mb-0">{{ $item->title }}</p>
                                             </td>
                                             <td class="font-weight-bolder text-center">
                                                 <p class=" text-secondary mb-0">
-                                                    {{ \Illuminate\Support\Str::limit($item->about, 100) }}</p>
+                                                    {{ \Illuminate\Support\Str::limit($item->description, 100) }}</p>
+                                            </td>
+                                            <td class="font-weight-bolder text-center">
+                                                <p class=" font-weight-bold mb-0">{{ $item->link }}</p>
                                             </td>
                                             <td class="font-weight-bolder text-center">
                                                 <a class="btn btn-danger text-white px-3 mb-0"
-                                                    href="{{ route('admin.team.delete', ['id' => $item->id]) }}"><i
+                                                    href="{{ route('admin.breastfeeding.delete', ['id' => $item->id]) }}"><i
                                                         class="material-icons  me-2">delete</i>Delete</a>
-
                                                 <button type="button" class="btn btn-warning text-white px-3 mb-0"
                                                     data-bs-toggle="modal" data-bs-target="#edit{{ $item->id }}"><i
                                                         class="material-icons text-sm">edit</i>
@@ -121,24 +125,30 @@
 
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog  modal-lg">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Add Team</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">Add Data</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form action="{{ route('admin.team.store') }}" method="POST">
+                <form action="{{ route('admin.breastfeeding.store') }}" method="POST">
                     @csrf
+                    @method('POST')
                     <div class="modal-body">
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <label for="exampleFormControlInput1" class="form-label">Title</label>
                             <input type="text" class="form-control" style="border: 1px solid #1c1c1c; padding-left: 10px"
-                                id="exampleFormControlInput1" name="name" placeholder="Your Name" required>
+                                id="exampleFormControlInput1" name="title" placeholder="Title..." required>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">About</label>
+                            <label for="yt" class="form-label">Link Youtube</label>
+                            <input type="text" class="form-control" style="border: 1px solid #1c1c1c; padding-left: 10px"
+                                id="yt" name="link" placeholder="https://www.youtube.com/xxxxxxx" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
                             <textarea class="form-control" required style="border: 1px solid #1c1c1c; padding-left: 10px"
-                                id="exampleFormControlTextarea1" name="about" rows="5"></textarea>
+                                id="exampleFormControlTextarea1" name="description" rows="5"></textarea>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -156,10 +166,10 @@
             <div class="modal-dialog  modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Edit Team</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">Edit Data</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <form action="{{ route('admin.team.update', $item->id) }}" method="POST">
+                    <form action="{{ route('admin.breastfeeding.update', $item->id) }}" method="POST">
                         @csrf
                         @method('PUT')
                         <div class="modal-body">
@@ -167,12 +177,18 @@
                                 <label for="exampleFormControlInput1" class="form-label">Title</label>
                                 <input type="text" class="form-control"
                                     style="border: 1px solid #1c1c1c; padding-left: 10px" id="exampleFormControlInput1"
-                                    name="name" placeholder="Name..." value="{{ $item->name }}" required>
+                                    name="title" placeholder="Title..." value="{{ $item->title }}" required>
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">About</label>
+                                <label for="yt" class="form-label">Title</label>
+                                <input type="text" class="form-control"
+                                    style="border: 1px solid #1c1c1c; padding-left: 10px" id="yt" name="link"
+                                    placeholder="https://www.youtube.com/xxxxxxx" value="{{ $item->link }}" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Description</label>
                                 <textarea class="form-control" required style="border: 1px solid #1c1c1c; padding-left: 10px"
-                                    id="exampleFormControlTextarea1" name="about" value="{{ $item->about }}" rows="5">{{ $item->about }}</textarea>
+                                    id="exampleFormControlTextarea1" name="description" value="{{ $item->description }}" rows="5">{{ $item->description }}</textarea>
                             </div>
                         </div>
                         <div class="modal-footer">

@@ -26,7 +26,7 @@
                 @endforeach
 
                 var errorToast = `
-                    <div class="toast align-items-center text-white bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div id="err" class="toast align-items-center text-white bg-danger border-0 position-absolute top-0 end-0 mt-2 me-2 p-2" role="alert" aria-live="assertive" aria-atomic="true">
                         <div class="d-flex">
                             <div class="toast-body">
                                 ${errorMessage}
@@ -37,7 +37,7 @@
                 `;
 
                 $(document.body).append(errorToast);
-                $('.toast').toast('show');
+                $('#err').toast('show');
             @endif
         }
     </script>

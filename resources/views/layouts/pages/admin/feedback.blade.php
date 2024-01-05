@@ -26,7 +26,7 @@
                 @endforeach
 
                 var errorToast = `
-                    <div class="toast align-items-center text-white bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div id="err" class="toast align-items-center text-white bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
                         <div class="d-flex">
                             <div class="toast-body">
                                 ${errorMessage}
@@ -37,7 +37,7 @@
                 `;
 
                 $(document.body).append(errorToast);
-                $('.toast').toast('show');
+                $('#err').toast('show');
             @endif
         }
     </script>
@@ -96,11 +96,11 @@
                                             </td>
                                             <td class="font-weight-bolder text-center">
                                                 <p class=" text-secondary mb-0">
-                                                    {{ \Illuminate\Support\Str::limit($item->description, 255) }}</p>
+                                                    {{ \Illuminate\Support\Str::limit($item->message, 255) }}</p>
                                             </td>
                                             <td class="font-weight-bolder text-center">
                                                 <a class="btn btn-danger text-white px-3 mb-0"
-                                                    href="{{ route('admin.article.delete', ['id' => $item->id]) }}"><i
+                                                    href="{{ route('admin.feedback.delete', ['id' => $item->id]) }}"><i
                                                         class="material-icons  me-2">delete</i>Delete</a>
                                             </td>
                                         </tr>

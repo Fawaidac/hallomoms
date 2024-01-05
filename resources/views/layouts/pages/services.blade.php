@@ -36,7 +36,8 @@
                             <h4 class="mb-3">Breastfeeding</h4>
                             <p class="mb-4">We provide a warm online space, full of Breast Care guides and videos to help
                                 you get through each stage of breastfeeding comfortably.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read
+                            <a class="btn btn-sm" href="/services/breastfeeding"><i
+                                    class="fa fa-plus text-primary me-2"></i>Read
                                 More</a>
                         </div>
                     </div>
@@ -56,7 +57,7 @@
                                 trimesters 1, 2, and 3, and up-to-date information that supports every woman on her
                                 pregnancy journey. Find helpful resources, health tips and inspiration to navigate every
                                 precious moment of your pregnancy.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read
+                            <a class="btn btn-sm" href="/services/pregnant"><i class="fa fa-plus text-primary me-2"></i>Read
                                 More</a>
                         </div>
                     </div>

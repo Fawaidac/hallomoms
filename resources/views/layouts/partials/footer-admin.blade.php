@@ -13,14 +13,7 @@
                                 for a better web.
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-                                <li class="nav-item">
-                                    <a href="" class="nav-link text-muted" target="_blank">Distributed By:
-                                        Reyne</a>
-                                </li>
-                            </ul>
-                        </div>
+
                     </div>
                 </div>
             </footer>

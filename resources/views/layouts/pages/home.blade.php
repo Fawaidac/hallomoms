@@ -242,7 +242,8 @@
                             <h4 class="mb-3">Breastfeeding</h4>
                             <p class="mb-4">We provide a warm online space, full of Breast Care guides and videos to help
                                 you get through each stage of breastfeeding comfortably.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read
+                            <a class="btn btn-sm" href="/services/breastfeeding"><i
+                                    class="fa fa-plus text-primary me-2"></i>Read
                                 More</a>
                         </div>
                     </div>
@@ -262,7 +263,8 @@
                                 trimesters 1, 2, and 3, and up-to-date information that supports every woman on her
                                 pregnancy journey. Find helpful resources, health tips and inspiration to navigate every
                                 precious moment of your pregnancy.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read
+                            <a class="btn btn-sm" href="/services/pregnant"><i
+                                    class="fa fa-plus text-primary me-2"></i>Read
                                 More</a>
                         </div>
                     </div>
@@ -280,32 +282,36 @@
                 <div class="col-lg-7">
                     <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
                         <h1 class="display-5 text-center mb-5">Feedback For Us</h1>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-dark-opacity border-0" id="gname"
-                                        placeholder="Gurdian Name">
-                                    <label for="gname">Your Name</label>
+                        <form action="{{ route('admin.feedback.store') }}" method="POST">
+                            @csrf
+                            @method('POST')
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-dark-opacity border-0"
+                                            id="gname" name="name" placeholder="Gurdian Name">
+                                        <label for="gname">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-dark-opacity border-0"
+                                            id="gmail" name="email" placeholder="Gurdian Email">
+                                        <label for="gmail">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-dark-opacity border-0" name="message" placeholder="Leave a message here"
+                                            id="message" style="height: 100px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="btn btn-primary py-3 px-4" type="submit">Submit Now</button>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control bg-dark-opacity border-0" id="gmail"
-                                        placeholder="Gurdian Email">
-                                    <label for="gmail">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control bg-dark-opacity border-0" placeholder="Leave a message here" id="message"
-                                        style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary py-3 px-4" type="submit">Submit Now</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
