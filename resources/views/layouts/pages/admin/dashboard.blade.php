@@ -15,14 +15,13 @@
                             <i class="material-icons opacity-10">weekend</i>
                         </div>
                         <div class="text-end pt-1">
-                            <p class="text-sm mb-0 text-capitalize">Today's Money</p>
-                            <h4 class="mb-0">$53k</h4>
+                            <p class="text-sm mb-0 text-capitalize">Services</p>
+                            <h4 class="mb-0">{{ $services }}</h4>
                         </div>
                     </div>
                     <hr class="dark horizontal my-0">
                     <div class="card-footer p-3">
-                        <p class="mb-0"><span class="text-success text-sm font-weight-bolder">+55% </span>than
-                            lask week</p>
+                        <p class="mb-0">Count Services</p>
                     </div>
                 </div>
             </div>
@@ -34,14 +33,13 @@
                             <i class="material-icons opacity-10">person</i>
                         </div>
                         <div class="text-end pt-1">
-                            <p class="text-sm mb-0 text-capitalize">Today's Users</p>
-                            <h4 class="mb-0">2,300</h4>
+                            <p class="text-sm mb-0 text-capitalize">Team</p>
+                            <h4 class="mb-0">{{ $team }}</h4>
                         </div>
                     </div>
                     <hr class="dark horizontal my-0">
                     <div class="card-footer p-3">
-                        <p class="mb-0"><span class="text-success text-sm font-weight-bolder">+3% </span>than
-                            lask month</p>
+                        <p class="mb-0">Count Team</p>
                     </div>
                 </div>
             </div>
@@ -53,14 +51,13 @@
                             <i class="material-icons opacity-10">person</i>
                         </div>
                         <div class="text-end pt-1">
-                            <p class="text-sm mb-0 text-capitalize">New Clients</p>
-                            <h4 class="mb-0">3,462</h4>
+                            <p class="text-sm mb-0 text-capitalize">Feedback</p>
+                            <h4 class="mb-0">{{ $feedback }}</h4>
                         </div>
                     </div>
                     <hr class="dark horizontal my-0">
                     <div class="card-footer p-3">
-                        <p class="mb-0"><span class="text-danger text-sm font-weight-bolder">-2%</span> than
-                            yesterday</p>
+                        <p class="mb-0">Count Feedback from User</p>
                     </div>
                 </div>
             </div>
@@ -72,14 +69,13 @@
                             <i class="material-icons opacity-10">weekend</i>
                         </div>
                         <div class="text-end pt-1">
-                            <p class="text-sm mb-0 text-capitalize">Sales</p>
-                            <h4 class="mb-0">$103,430</h4>
+                            <p class="text-sm mb-0 text-capitalize">Article</p>
+                            <h4 class="mb-0">{{ $article }}</h4>
                         </div>
                     </div>
                     <hr class="dark horizontal my-0">
                     <div class="card-footer p-3">
-                        <p class="mb-0"><span class="text-success text-sm font-weight-bolder">+5% </span>than
-                            yesterday</p>
+                        <p class="mb-0">Count Article</p>
                     </div>
                 </div>
             </div>

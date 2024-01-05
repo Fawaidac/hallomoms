@@ -38,6 +38,7 @@ Route::get('/detail-article/{id}', [ArtikelController::class, 'show'])->name('ar
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 
 Route::get('/login', [AuthController::class, 'index'])->name('login');
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::post('/login', [AuthController::class, 'login'])->name('login.act');
 Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
 
