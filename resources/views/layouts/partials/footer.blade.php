@@ -3,9 +3,9 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>East Java</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>hallomoms@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
                                 class="fab fa-twitter"></i></a>
@@ -19,19 +19,16 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Services</h4>
-                    <a class="btn btn-link" href="">Landscaping</a>
-                    <a class="btn btn-link" href="">Pruning plants</a>
-                    <a class="btn btn-link" href="">Urban Gardening</a>
-                    <a class="btn btn-link" href="">Garden Maintenance</a>
-                    <a class="btn btn-link" href="">Green Technology</a>
+                    <a class="btn btn-link" href="/services/breastfeeding">Breastfeeding</a>
+                    <a class="btn btn-link" href="/services/breastfeeding">Pregnant</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <a class="btn btn-link" href="/about">About Us</a>
+                    <a class="btn btn-link" href="/contact">Contact Us</a>
+                    <a class="btn btn-link" href="/services">Our Services</a>
+                    <a class="btn btn-link" href="/about">Our Team</a>
+                    <a class="btn btn-link" href="/article">Article</a>
                 </div>
                 {{-- <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Newsletter</h4>
